@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { getRandomArrayItem } from '../utils/misc';
 import { QUOTES, AUTHORS } from '../assets/sigmaQuotes';
-import sigma from '../assets/sigma.png';
+import sigma from '../assets/sigma.webp';
 
 export const SigmaQuote = () => {
   const [refresh, setRefresh] = useState<number>(0);
@@ -27,7 +27,11 @@ export const SigmaQuote = () => {
         <p class="text-sm max-h-[10vh] text-left">{quote.quote}</p>
         <div class="flex flex-row-reverse w-[100%] items-center gap-2 mt-4">
           <p class="text-sm text-right italic font-semibold h-max">{quote.author}</p>
-          <img src={sigma} class="h-8 w-8 rounded-full border"></img>
+          <img
+            src={sigma}
+            alt="Image of a true sigma male"
+            class="h-8 w-8 rounded-full border"
+          ></img>
         </div>
       </div>
     </div>
