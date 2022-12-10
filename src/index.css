@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: var(--text-color);
+}
+
+.dynamic-text-color {
+  color: var(--text-color);
+}
+
+.dynamic-text-color:hover {
+  color: var(--text-color);
+}
+
+.dynamic-hover-color:hover {
+  background-color: var(--text-bg-color);
+  filter: invert(1);
+}
+
+.border-dynamic {
+  border: 0.125rem solid var(--text-color);
+}
