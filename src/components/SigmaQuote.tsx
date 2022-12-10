@@ -28,6 +28,7 @@ export const SigmaQuote = () => {
         <div class="flex flex-row-reverse w-[100%] items-center gap-2 mt-4">
           <p class="text-sm text-right italic font-semibold h-max">{quote.author}</p>
           <img
+            id="sigma-image"
             src={sigma}
             alt="Image of a true sigma male"
             class="h-8 w-8 rounded-full border"
