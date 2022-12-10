@@ -22,9 +22,9 @@ export const SigmaQuote = () => {
   }, [refreshInterval]);
 
   return (
-    <div class="flex gap-4 items-center justify-center mx-auto text-white space-y-2 select-none w-max">
+    <div class="flex gap-4 items-center justify-center mx-auto text-white space-y-2 select-none w-96 h-32">
       <div class="w-96">
-        <p class="text-sm max-h-[10vh] text-left">{quote.quote}</p>
+        <p class="text-sm h-16 text-left">{quote.quote}</p>
         <div class="flex flex-row-reverse w-[100%] items-center gap-2 mt-4">
           <p class="text-sm text-right italic font-semibold h-max">{quote.author}</p>
           <img
