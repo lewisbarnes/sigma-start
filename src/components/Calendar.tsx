@@ -19,12 +19,12 @@ export const Calendar = () => {
         <span>Friday</span>
         <span>Saturday</span>
       </div>
-      <div class="mx-auto text-white grid grid-cols-7 rounded-b-md lg:h-[12.5vw] text-xs">
+      <div class="mx-auto text-white grid grid-cols-7 rounded-b-md text-xs">
         {Array.from(new Array(35)).map((x, i) => (
           <p
             class={`${
               (i + 1) % 7 ? 'border-r' : ''
-            } border-zinc-500 last-of-type:border-r-0 ${'border-t'} p-2 ${
+            } border-zinc-500 last-of-type:border-r-0 ${'border-t'} aspect-square p-2 ${
               i == 34 || i == 41 ? 'rounded-b-md' : ''
             }`}
           >
@@ -34,9 +34,9 @@ export const Calendar = () => {
                   {lastMonth.daysInMonth() - firstDay.day() + 1 + i}
                 </span>
               ) : i + 1 - firstDay.day() == date.date() ? (
-                <span className="bg-white text-black rounded-full p-1 -ml-1">
-                  {i + 1 - firstDay.day()}
-                </span>
+                <div className="bg-white text-black rounded-full w-6 aspect-square flex -ml-1 justify-center items-center">
+                  <p className="block">{i + 1 - firstDay.day()}</p>
+                </div>
               ) : (
                 <span>{i + 1 - firstDay.day()}</span>
               )
