@@ -6,7 +6,7 @@ export const Calendar = () => {
   const firstDay = date.clone().set('date', 1);
 
   return (
-    <div class="lg:w-[25vw] mx-auto bg-black/60 rounded-md">
+    <div class="max-w-[50vmin] mx-auto bg-black/60 rounded-md">
       <div class="text-white text-center mx-auto rounded-t-md py-2 text-xl font-bold">
         {date.format('MMMM')}
       </div>
@@ -34,7 +34,7 @@ export const Calendar = () => {
                   {lastMonth.daysInMonth() - firstDay.day() + 1 + i}
                 </span>
               ) : i + 1 - firstDay.day() == date.date() ? (
-                <div className="bg-white text-black rounded-full w-6 aspect-square flex -ml-1 justify-center items-center">
+                <div className="bg-white text-black rounded-full w-6 aspect-square flex -mt-1 -ml-1 justify-center items-center">
                   <p className="block">{i + 1 - firstDay.day()}</p>
                 </div>
               ) : (
