@@ -28,13 +28,13 @@ export const Clock = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <p class="text-6xl font-light w-max mx-auto select-none text-white">
         {time.format('HH:mm:ss')}
       </p>
       <p class="block text-2xl font-light  w-max mt-2 mx-auto select-none text-white">
         Good {timeOfDay}!
       </p>
-    </>
+    </div>
   );
 };
