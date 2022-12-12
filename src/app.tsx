@@ -31,7 +31,7 @@ export function App() {
           <div class="sticky top-4 left-0 right-0">
             <SearchBar />
           </div>
-          {!showQuotes && <SigmaQuote />}
+          <SigmaQuote />
           <Calendar />
         </div>
       </div>
