@@ -22,13 +22,16 @@ export function App() {
       }}
     >
       <div class="min-h-full bg-gradient-to-b from-black via-blue-800/60 to-transparent bg-opacity-50">
+        <button className="fixed w-max top-4 right-4 text-white px-2 rounded-full border border-zinc-500">
+          Settings
+        </button>
         <div class="z-50 pt-8 space-y-4">
           <Clock />
           <QuickLinks />
           <div class="sticky top-4 left-0 right-0">
             <SearchBar />
           </div>
-          {showQuotes && <SigmaQuote />}
+          {!showQuotes && <SigmaQuote />}
           <Calendar />
         </div>
       </div>
