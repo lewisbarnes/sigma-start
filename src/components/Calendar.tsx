@@ -12,9 +12,9 @@ export const Calendar = () => {
       <div class="text-white text-center mx-auto rounded-t-md py-2 text-xl font-bold">
         {date.format('MMMM')}
       </div>
-      <div class="text-white grid grid-cols-7 rounded-b-md  text-center py-2 text-xs">
+      <div class="text-white grid grid-cols-7 rounded-b-md  py-2 text-xs">
         {days.map((x) => (
-          <span>{x.substring(0, 3)}</span>
+          <span>{x.substring(0, 3).toUpperCase()}</span>
         ))}
       </div>
       <div class="mx-auto text-white grid grid-cols-7 rounded-b-md text-xs">

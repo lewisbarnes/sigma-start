@@ -34,7 +34,7 @@ export const SearchBar = () => {
     <div>
       <input
         id="search-bar"
-        class="bg-black/60 mx-auto w-[80vw] block rounded-full px-4 py-2 border border-zinc-500 placeholder:text-white text-white"
+        class="bg-black/60 mx-auto w-[80vw] block rounded-full px-4 py-2 border border-zinc-500 placeholder:text-white text-white outline-none"
         onKeyPress={(e) => search(e)}
         placeholder="Search DuckDuckGo"
       />
